@@ -62,7 +62,7 @@ header .img-user {
 }
 
 .hero-section {
-    background-image: url(img/background.png);
+    background-image: url(/img/background.png);
     background-repeat: no-repeat;
 }
 
@@ -202,9 +202,12 @@ header .img-user {
     display: flex;
     padding: 25px 42px;
     border: 2px solid #F3F3F3;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     margin-bottom: 19px;
     cursor: pointer;
+}
+
+.important-topics .important-topic:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .important-topics .number {

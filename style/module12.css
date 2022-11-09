@@ -1,0 +1,338 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+textarea {
+    outline: none;
+    border-style: solid;
+    background-color: transparent;
+}
+
+.container {
+    max-width: 1126px;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 29px;
+    padding-bottom: 2px;
+}
+
+header .menu {
+    display: flex;
+}
+
+header .menu-item {
+    font-weight: 700;
+    font-size: 16px;
+    padding-bottom: 27px;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+header .menu-item:not(:last-child) {
+    margin-left: 35px;
+}
+
+header .menu-item:last-child {
+    margin-left: 68px;
+}
+
+header .menu-item:hover {
+    border-bottom: 2px solid #FC890D;
+}
+
+header .img-user {
+    margin-right: 6px;
+}
+
+.hero-section {
+    background-image: url(/img/background-children.png);
+    padding-top: 112px;
+    padding-bottom: 23px;
+}
+
+.hero-section .cta {
+    width: 50%;
+}
+
+.hero-section .cta-caption {
+    position: relative;
+    display: inline-block;
+    font-size: 44px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #222B3A;
+    padding: 25px 37px 25px 0px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    margin-bottom: 19px;
+}
+
+.cta-caption:before {
+    position: absolute;
+    content: '';
+    background-color: #222B3A;
+    height: 100%;
+    width: 50vw;
+    right: 100%;
+    top: 0px;
+}
+
+.hero-section .cta-text {
+    font-size: 16px;
+    font-weight: 700;
+    color: #222B3A;
+    margin-bottom: 41px;
+}
+
+.hero-section .cta-number {
+    font-size: 38px;
+    font-weight: 700;
+    color: #222B3A;
+}
+
+.hero-section .cta-number-text {
+    font-size: 14px;
+    color: #222B3A;
+    font-weight: 600;
+}
+
+.hero-section .topics-column {
+    display: flex;
+    margin-bottom: 67px;
+}
+
+.hero-section .number-topics {
+    display: flex;
+    align-items: center;
+}
+
+.hero-section .number-topics:first-child {
+    margin-right: 115px;
+}
+
+.hero-section .cta-number {
+    margin-right: 9px;
+}
+
+.hero-section .cta-name-topic {
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.catalog-section {
+    background-color: #FAFAFA;
+    margin-bottom: 32px;
+}
+
+.catalog-section .catalog {
+    display: flex;
+    padding: 15px 0;
+}
+
+.catalog-section .catalog-item {
+    color: #979FAD;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 14px;
+}
+
+.catalog-section .catalog-item:hover {
+    color: #4d4d4d;
+    transition: 0.3;
+}
+
+.catalog-section .catalog-item:not(:first-child) {
+    margin-left: 14px;
+}
+
+.catalog-section .catalog-item:last-child {
+    color: #323232;
+}
+
+.block-module {
+    display: flex;
+    align-items: center;
+}
+
+
+.module-caption {
+    font-size: 32px;
+    font-weight: 700;
+    color: #222B3A;
+}
+
+.module-line {
+    width: 68%;
+    height: 1.3px;
+    background-color: #F1F1F1;
+    margin: 0 16px;
+}
+
+.module-tasks .task-line {
+    height: 1.3px;
+    background-color: #F1F1F1;
+}
+
+.module-tasks .polygon {
+    cursor: pointer;
+}
+
+.module-tasks .task {
+    display: flex;
+    align-items: center;
+}
+
+.module-tasks .block-chekbox {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.module-tasks .number-task {
+    font-size: 16px;
+    font-weight: 700;
+    color: #222B3A;
+    background-color: #F3F3F3;
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 6px 10px 8px 10px;
+    margin-right: 24px;
+    width: 25px;
+    height: 25px;
+}
+
+.module-tasks .text-task {
+    font-size: 16px;
+    font-weight: 700;
+    color: #222B3A;
+    margin-top: 23px;
+    margin-bottom: 27px;
+}
+
+.work-out {
+    background-color: #FAFAFA;
+    padding: 38px 0 62px 0;
+}
+
+.block-chekbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .block-chekbox:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .block-chekbox input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .block-chekbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .block-chekbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.work-out .active-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #FFA43F;
+    border-radius: 3px;
+    padding: 34px 53px;
+}
+
+.active-block .work-content {
+    margin-left: 53px;
+}
+
+.active-block .over-caption {
+    display: flex;
+    margin-bottom: 19px;
+}
+
+.active-block .work-block-first {
+    display: flex;
+}
+
+.active-block .over-caption-text {
+    font-size: 16px;
+    font-weight: 700;
+    color: #979FAD;
+    margin-right: 29px;
+    margin-left: 9px;
+}
+
+.active-block .caption-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: #222B3A;
+    margin-bottom: 25px;
+}
+
+.active-block .under-caption {
+    display: flex;
+}
+
+.active-block .under-caption-text {
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 51px;
+    margin-left: 11px;
+    color: #696969;
+}
+
+.active-block .under-caption-text:first-child {
+    color: #FC890D;
+}
