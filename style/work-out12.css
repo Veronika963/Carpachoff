@@ -91,6 +91,11 @@ header .img-user {
     color: #323232;
 }
 
+.hero-section .container {
+    width: 802px;
+
+}
+
 .hero-section .caption {
     display: flex;
     margin-bottom: 46px;
@@ -139,4 +144,86 @@ header .img-user {
 
 .hero-section .slider {
     cursor: pointer;
+}
+
+.hero-section .Carpachoff-youtube {
+    margin-top: 42px;
+    margin-bottom: 49px;
+}
+
+.hero-section .article-text {
+    margin-bottom: 28px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #222B3A;
+}
+
+.hero-section .buttons {
+    display: flex;
+}
+
+.hero-section .button-grade {
+    background-color: #FC890D;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    border-radius: 3px;
+    padding: 15px 89px;
+    cursor: pointer;
+    margin-right: 24px;
+}
+
+.hero-section .button-text {
+    display: flex;
+    align-items: center;
+}
+
+.hero-section .button-img {
+    margin-right: 9px;
+}
+
+.hero-section .button-return {
+    color: #FC890D;
+    font-size: 14px;
+    font-weight: 700;
+    border: 2px solid #FC890D;
+    border-radius: 3px;
+    padding: 15px 72px;
+    cursor: pointer;
+    margin-right: 24px;
+}
+
+footer {
+    background-color: #0099DD;
+    margin-top: 89px;
+}
+
+footer .footer-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-caption {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 37px;
+}
+
+footer .footer-item {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+footer .footer-item:first-child {
+    margin-top: 25px;
+}
+
+footer .rectangle {
+    background-color: #222B3A;
+    height: 47px;
+    margin-top: 45px;
 }
