@@ -62,7 +62,7 @@ header .img-user {
 }
 
 .hero-section {
-    background-image: url(/img/background.png);
+    background-image: url('../img/background.png');
     background-repeat: no-repeat;
 }
 

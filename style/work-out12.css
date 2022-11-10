@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+textarea {
+    outline: none;
+    border-style: solid;
+    background-color: transparent;
+}
+
+.container {
+    max-width: 1126px;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 29px;
+    padding-bottom: 2px;
+}
+
+header .menu {
+    display: flex;
+}
+
+header .menu-item {
+    font-weight: 700;
+    font-size: 16px;
+    padding-bottom: 27px;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+header .menu-item:not(:last-child) {
+    margin-left: 35px;
+}
+
+header .menu-item:last-child {
+    margin-left: 68px;
+}
+
+header .menu-item:hover {
+    border-bottom: 2px solid #FC890D;
+}
+
+header .img-user {
+    margin-right: 6px;
+}
+
+.catalog-section {
+    background-color: #FAFAFA;
+    margin-bottom: 32px;
+}
+
+.catalog-section .catalog {
+    display: flex;
+    padding: 15px 0;
+}
+
+.catalog-section .catalog-item {
+    color: #979FAD;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 14px;
+}
+
+.catalog-section .catalog-item:hover {
+    color: #4d4d4d;
+    transition: 0.3;
+}
+
+.catalog-section .catalog-item:not(:first-child) {
+    margin-left: 14px;
+}
+
+.catalog-section .catalog-item:last-child {
+    color: #323232;
+}
+
+.hero-section .caption {
+    display: flex;
+    margin-bottom: 46px;
+}
+
+.hero-section .caption-text {
+    font-size: 32px;
+    font-weight: 700;
+    color: #222B3A;
+    margin-left: 36px;
+}
+
+.hero-section .under-caption {
+    display: flex;
+}
+
+.hero-section .under-caption-part {
+    display: flex;
+    align-items: center;
+}
+
+.hero-section .under-text-first {
+    font-size: 18px;
+    font-weight: 700;
+    color: #979FAD;
+    margin-left: 9px;
+    margin-right: 57px;
+}
+
+.hero-section .under-text-second {
+    font-size: 18px;
+    font-weight: 700;
+    color: #696969;
+    margin-left: 9px;
+    margin-right: 57px;
+}
+
+.under-caption-part:last-child .under-text-second {
+    color: #FC890D;
+    margin-right: 16px;
+}
+
+.hero-section .under-caption-icon {
+    max-width: 17px;
+}
+
+.hero-section .slider {
+    cursor: pointer;
+}

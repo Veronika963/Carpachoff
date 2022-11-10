@@ -62,7 +62,7 @@ header .img-user {
 }
 
 .hero-section {
-    background-image: url(/img/background-children.png);
+    background-image: url('../img/background-children.png');
     padding-top: 112px;
     padding-bottom: 23px;
 }
@@ -170,6 +170,7 @@ header .img-user {
 .block-module {
     display: flex;
     align-items: center;
+    margin-bottom: 41px;
 }
 
 
@@ -257,6 +258,7 @@ header .img-user {
   /* When the checkbox is checked, add a blue background */
   .block-chekbox input:checked ~ .checkmark {
     background-color: #2196F3;
+    border-radius: 3px;
   }
   
   /* Create the checkmark/indicator (hidden when not checked) */
@@ -330,9 +332,14 @@ header .img-user {
     font-weight: 700;
     margin-right: 51px;
     margin-left: 11px;
+    cursor: pointer;
     color: #696969;
 }
 
-.active-block .under-caption-text:first-child {
+.active-block .under-caption-text:first-of-type {
     color: #FC890D;
+}
+
+.active-block .off-slider {
+    cursor: pointer;
 }
