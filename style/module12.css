@@ -181,10 +181,16 @@ header .img-user {
 }
 
 .module-line {
-    width: 68%;
+    /* width: 68%; */
+    max-width: 771px;
+    width: 100vw;
     height: 1.3px;
     background-color: #F1F1F1;
     margin: 0 16px;
+}
+
+.module-tasks .module-caption {
+    min-width: 305px;
 }
 
 .module-tasks .task-line {
@@ -232,49 +238,53 @@ header .img-user {
     padding: 38px 0 62px 0;
 }
 
+.work-out .module-caption {
+    min-width: 267px;
+}
+
 .block-chekbox input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
     height: 0;
     width: 0;
-  }
-  
-  /* Create a custom checkbox */
-  .checkmark {
+}
+
+/* Create a custom checkbox */
+.checkmark {
     position: absolute;
     /* top: 0;
     left: 0; */
     height: 25px;
     width: 25px;
     background-color: #eee;
-  }
-  
-  /* On mouse-over, add a grey background color */
-  .block-chekbox:hover input ~ .checkmark {
+}
+
+/* On mouse-over, add a grey background color */
+.block-chekbox:hover input~.checkmark {
     background-color: #ccc;
-  }
-  
-  /* When the checkbox is checked, add a blue background */
-  .block-chekbox input:checked ~ .checkmark {
+}
+
+/* When the checkbox is checked, add a blue background */
+.block-chekbox input:checked~.checkmark {
     background-color: #2196F3;
     border-radius: 3px;
-  }
-  
-  /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmark:after {
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
     content: "";
     position: absolute;
     display: none;
-  }
-  
-  /* Show the checkmark when checked */
-  .block-chekbox input:checked ~ .checkmark:after {
+}
+
+/* Show the checkmark when checked */
+.block-chekbox input:checked~.checkmark:after {
     display: block;
-  }
-  
-  /* Style the checkmark/indicator */
-  .block-chekbox .checkmark:after {
+}
+
+/* Style the checkmark/indicator */
+.block-chekbox .checkmark:after {
     left: 9px;
     top: 5px;
     width: 5px;
@@ -287,12 +297,14 @@ header .img-user {
 }
 
 .work-out .active-block {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border: 2px solid #FFA43F;
     border-radius: 3px;
-    padding: 34px 53px;
+    padding: 34px 53px 34px 54px;
+    margin-bottom: 10px;
 }
 
 .active-block .work-content {
@@ -304,8 +316,25 @@ header .img-user {
     margin-bottom: 19px;
 }
 
+.active-block .block-number {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-color: #FFA43F;
+    padding: 7px 12px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    width: 30px;
+    height: 30px;
+}
+
 .active-block .work-block-first {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .active-block .over-caption-text {
@@ -342,4 +371,305 @@ header .img-user {
 
 .active-block .off-slider {
     cursor: pointer;
+}
+
+.not-active-block {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #F3F3F3;
+    border-radius: 3px;
+    padding: 34px 53px 34px 54px;
+    margin-bottom: 10px;
+}
+
+.not-active-block:hover {
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.not-active-block .work-content {
+    margin-left: 53px;
+}
+
+.not-active-block .over-caption {
+    display: flex;
+    margin-bottom: 19px;
+}
+
+.not-active-block .block-number {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background: #F3F3F3;
+    padding: 7px 12px;
+    color: #222B3A;
+    font-size: 16px;
+    font-weight: 700;
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    width: 30px;
+    height: 30px;
+}
+
+.not-active-block .work-block-first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.not-active-block .over-caption-text {
+    font-size: 16px;
+    font-weight: 700;
+    color: #979FAD;
+    margin-right: 29px;
+    margin-left: 9px;
+}
+
+.not-active-block .over-caption-practice,
+.active-block .over-caption-practice {
+    font-size: 16px;
+    line-height: 19px;
+    color: #027EB4;
+    font-weight: 700;
+    margin-right: 29px;
+}
+
+.not-active-block .caption-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: #222B3A;
+    margin-bottom: 25px;
+}
+
+.not-active-block .under-caption {
+    display: flex;
+}
+
+.not-active-block .under-caption-text {
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 51px;
+    margin-left: 11px;
+    cursor: pointer;
+    color: #696969;
+}
+
+.not-active-block .under-caption-text:first-of-type {
+    color: #FC890D;
+}
+
+.not-active-block .off-slider {
+    cursor: pointer;
+}
+
+.additional-tasks {
+    padding: 45px 0;
+}
+
+.additional-tasks .module-caption {
+    min-width: 499px;
+}
+
+.additional-tasks .not-active-block {
+    border: none;
+    box-shadow: none;
+}
+
+a:not(:last-child) .not-active-block {
+    border-bottom: 1.3px solid #F3F3F3;
+}
+
+.additional-tasks .block-number {
+    border-radius: 3px;
+    margin-top: 37px;
+}
+
+.what-to-check {
+    background: #FAFAFA;
+    padding: 46px 0 56px 0;
+}
+
+.what-to-check .module-caption {
+    min-width: 318px
+}
+
+.what-to-check .chek-caption {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    color: #027EB4;
+    padding-bottom: 16px;
+}
+
+.what-to-check .chek-caption {
+    margin-top: 31px;
+}
+
+.what-to-check .item-chek-part {
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: #222B3A;
+    background-color: #FFFFFF;
+    margin-bottom: 2px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.what-to-check .item-importantly .item-importantly-text {
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: #FFFFFF;
+    background: linear-gradient(89.96deg, #FF8A00 0.03%, #FC880D 99.97%), #FFA43F;
+    border-radius: 3px;
+    padding-top: 16px;
+    padding-bottom: 13px;
+    padding-left: 19px;
+    margin-top: 41px;
+}
+
+.what-to-check .item-importantly .img-mark {
+    margin-right: 20px;
+}
+
+.what-to-check .item-importantly .chek-caption {
+    color: #FC890D;
+}
+
+.pay-attention .module-caption {
+    min-width: 392px;
+    margin-top: 40px;
+}
+
+.pay-attention .item-attention {
+    display: flex;
+    align-items: center;
+    background: #FAFAFA;
+    border: 1px solid #EAEAEA;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 28px 0px 30px 34px;
+    margin-bottom: 19px;
+    position: relative;
+}
+
+.pay-attention .item-attention:hover {
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.pay-attention .pay-item-text {
+    font-size: 22px;
+    line-height: 27px;
+    color: #222B3A;
+    font-weight: 700;
+    margin-left: 28px;
+}
+
+.pay-attention .like {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 80px;
+}
+
+.pay-attention .like .new-question {
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 700;
+    color: #0099DD;
+    margin-right: 25px;
+    margin-left: 10px;
+}
+
+.pay-attention .like-quantity {
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 700;
+    color: #222B3A;
+    margin-left: 8px;
+}
+
+.pay-attention .img-arrow {
+    position: absolute;
+    right: 37px;
+}
+
+.pay-attention .questions-buttons {
+    display: flex;
+}
+
+.pay-attention .my-question-btn {
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    font-weight: 700;
+    color: #FFFFFF;
+    background: linear-gradient(89.96deg, #FF8A00 0.03%, #FC880D 99.97%);
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+    padding: 15px 62px;
+    margin-right: 24px;
+}
+
+.pay-attention .my-question-btn:hover {
+    filter: brightness(0.9);
+}
+
+.pay-attention .all-questions-btn {
+    border-radius: 3px;
+    border: 2px solid #FF8A00;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FF8A00;
+    font-weight: 700;
+    padding: 13px 44px;
+    cursor: pointer;
+}
+
+.pay-attention .all-questions-btn:hover {
+    filter: brightness(0.9);
+}
+
+footer {
+    background-color: #0099DD;
+    margin-top: 76px;
+}
+
+footer .footer-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-caption {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 37px;
+}
+
+footer .footer-item {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+footer .footer-item:first-child {
+    margin-top: 25px;
+}
+
+footer .rectangle {
+    background-color: #222B3A;
+    height: 47px;
+    margin-top: 45px;
 }

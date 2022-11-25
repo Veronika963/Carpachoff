@@ -71,7 +71,7 @@ header .img-user {
 }
 
 .hero-section .cta {
-    width: 50%;
+    width: 60%;
 }
 
 .hero-section .cta-caption {
@@ -80,6 +80,7 @@ header .img-user {
     font-weight: 700;
     margin-bottom: 29px;
     margin-top: 108px;
+    text-transform: uppercase;
 }
 
 .hero-section .cta-name {
@@ -87,6 +88,7 @@ header .img-user {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 29px;
+    text-transform: uppercase;
 }
 
 .hero-section .cta-button {
@@ -207,7 +209,7 @@ header .img-user {
 }
 
 .important-topics .important-topic:hover {
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.03);
 }
 
 .important-topics .number {
